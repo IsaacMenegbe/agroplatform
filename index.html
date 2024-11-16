@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agricultural Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <nav>
+      <div class="logo">AgriConnect</div>
+      <button class="menu-toggle" aria-label="Toggle Navigation">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="#dashboard">Dashboard</a></li>
+        <li><a href="#alerts">Alerts</a></li>
+        <li><a href="#marketplace">Marketplace</a></li>
+        <li><a href="#support">Post-Harvest</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+      <div class="auth-buttons">
+        <button id="login-btn">Login</button>
+        <button id="register-btn">Register</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-content">
+      <h1>Empowering Farmers with Technology</h1>
+      <p>Real-time data, market access, and post-harvest support in one platform.</p>
+      <button class="cta-btn" onclick="scrollToDashboard()">Get Started</button>
+    </div>
+  </section>
+
+  <!-- Dashboard Section -->
+  <section id="dashboard" class="section">
+    <h2>Dashboard</h2>
+    <div class="crop-selection">
+      <label for="crop-select">Select Crop:</label>
+      <select id="crop-select">
+        <option value="maize">Maize</option>
+        <option value="rice">Rice</option>
+        <option value="wheat">Wheat</option>
+      </select>
+    </div>
+    <div class="dashboard-grid">
+      <div class="card" id="weather-card">
+        <h3>Weather</h3>
+        <img src="https://via.placeholder.com/150" alt="Weather icon">
+        <p id="weather">Sunny, 30°C</p>
+      </div>
+      <div class="card" id="soil-health-card">
+        <h3>Soil Health</h3>
+        <img src="https://via.placeholder.com/150" alt="Soil health">
+        <p id="soil-health">Loading...</p>
+      </div>
+      <div class="card" id="crop-requirements-card">
+        <h3>Crop Requirements</h3>
+        <img src="https://via.placeholder.com/150" alt="Crop requirements">
+        <p id="crop-requirements">Loading...</p>
+      </div>
+      <div class="card" id="pest-alerts-card">
+        <h3>Pest Alerts</h3>
+        <img src="https://via.placeholder.com/150" alt="Pest alerts">
+        <p id="pest-alerts">None Detected</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Alerts Section -->
+  <section id="alerts" class="section">
+    <h2>Real-Time Alerts</h2>
+    <p>Get instant notifications on extreme weather, pest outbreaks, and drought conditions.</p>
+    <div class="alert-grid">
+      <div class="alert-card">
+        <h3>Extreme Weather</h3>
+        <p>Storm warning in Anambra region. Expected in 24 hours.</p>
+      </div>
+      <div class="alert-card">
+        <h3>Pest Outbreak</h3>
+        <p>Stem borers detected in rice fields. Action needed.</p>
+      </div>
+      <div class="alert-card">
+        <h3>Drought Alert</h3>
+        <p>Low rainfall detected. Irrigation advised.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marketplace Section -->
+  <section id="marketplace" class="section">
+    <h2>Marketplace</h2>
+    <p>Connect directly with buyers and sell your produce at transparent prices.</p>
+    <div class="marketplace-grid">
+      <div class="product-card">
+        <h3>Maize</h3>
+        <p>Price: ₦20,000/ton</p>
+      </div>
+      <div class="product-card">
+        <h3>Rice</h3>
+        <p>Price: ₦35,000/ton</p>
+      </div>
+      <div class="product-card">
+        <h3>Wheat</h3>
+        <p>Price: ₦40,000/ton</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Post-Harvest Support Section -->
+  <section id="support" class="section">
+    <h2>Post-Harvest Support</h2>
+    <p>Access logistics for crop storage, packaging, and transportation to reduce post-harvest losses.</p>
+    <ul>
+      <li>Secure storage facilities</li>
+      <li>Affordable packaging solutions</li>
+      <li>Efficient transportation options</li>
+    </ul>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>AgriConnect is dedicated to empowering farmers by integrating technology into agriculture. Our platform provides real-time data, market access, and logistics support for sustainable farming practices.</p>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or need support, feel free to reach out to us.</p>
+    <form action="#">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 AgriConnect. All rights reserved.</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
